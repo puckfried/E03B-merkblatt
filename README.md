@@ -57,6 +57,12 @@ Folgende Elemente haben wir bislang kennengelernt:
 | `<h1>`...`<h6>` | Überschriften                            | `<h1>Überschrift</h1>`               |
 | `<p>`          | Textabsatz                                | `<p>Textabsatz</p>`                  |
 
+#### 2.2 Inline Elemente (nehmen nur die Breite ihres Inhalts)
+
+| HTML-Element | Beschreibung                    | Beispiel                              |
+|:------------:|:-------------------------------:|:-------------------------------------:|
+| `<a>`        | Hyperlink (intern, extern)      | `<a href="url">Linktext</a>`          |
+
 ### Allgemeine Tastenkombinationen
 
 Tastenkombinationen, die in **VS Code** und anderen Programmen funktionieren:
