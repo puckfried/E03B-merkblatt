@@ -9,7 +9,10 @@ Hier findet ihr eine fortlaufende Übersicht über unsere bislang kennengelernte
    - [Head-Elemente](#1-head-elemente-erscheinen-nicht-auf-der-seite-sondern-nur-infos-für-den-browser-und-google)
    - [Body-Elemente](#2-body-elemente-der-sichtbare-bereich-eurer-webseite)
        - [Block Elemente](#21-block-elemente-nehmen-die-gesamte-breite-des-bildschirms-ein)
-2. [Nützliche Tastenkombinationen](#nützliche-tastenkombinationen-windows)
+       - [Inline Elemente](#22-inline-elemente-nehmen-nur-die-breite-ihres-inhalts)
+2. [CSS-Eigenschaften](#css-eigenschaften)
+   - [Textformatierung](#textformatierung)
+3. [Nützliche Tastenkombinationen](#nützliche-tastenkombinationen-windows)
 
 <br><br><br>
 
@@ -56,12 +59,36 @@ Folgende Elemente haben wir bislang kennengelernt:
 |:-------------:|:------------------------------------------:|:------------------------------------:|
 | `<h1>`...`<h6>` | Überschriften                            | `<h1>Überschrift</h1>`               |
 | `<p>`          | Textabsatz                                | `<p>Textabsatz</p>`                  |
+| `<ul>`         | Ungeordnete Liste                         | `<ul><li>Element</li></ul>`          |
+| `<ol>`         | Geordnete Liste                           | `<ol><li>Erstes Element</li></ol>`   |
+| `<li>`         | Listenelement                             | `<li>Listeneintrag</li>`             |
 
 #### 2.2 Inline Elemente (nehmen nur die Breite ihres Inhalts)
 
 | HTML-Element | Beschreibung                    | Beispiel                              |
 |:------------:|:-------------------------------:|:-------------------------------------:|
 | `<a>`        | Hyperlink (intern, extern)      | `<a href="url">Linktext</a>`          |
+| `<br>`       | Spezielles leeres Element für Zeilenumbrüche  | `Dies ist ein Text<br>neue Zeile`         |
+| `<img>`      | Bild einfügen                                 | `<img src="url" alt="Bildbeschreibung">`  |
+
+
+<br><br><br>
+
+## CSS-Eigenschaften
+**CSS** steht für ***Cascading Style Sheets*** und wird verwendet, um das Aussehen von HTML-Elementen auf einer Webseite zu definieren. Mit CSS können verschiedene Eigenschaften wie Farbe, Schriftart und Positionierung definiert werden. Durch die Trennung von Inhalt und Design wird das Ändern des Aussehens der Webseite einfacher, da nur das CSS geändert werden muss, ohne den HTML-Code zu bearbeiten.
+
+
+### Textformatierung
+| Eigenschaft       | Beschreibung                                   | Beispiel                        |
+|-------------------|------------------------------------------------|---------------------------------|
+| `color`           | Setzt die Textfarbe.                           | `color: blue;`                  |
+| `font-size`       | Bestimmt die Schriftgröße.                     | `font-size: 16px;`              |
+| `text-decoration` | Fügt Dekorationen wie Unterstreichungen hinzu. | `text-decoration: underline;`   |
+| `font-weight`     | Definiert die Dicke der Schrift.               | `font-weight: bold;`            |
+| `font-family`     | Bestimmt die Schriftart.                       | `font-family: Arial, sans-serif;`|
+| `font-style`      | Legt den Stil der Schrift fest (z.B. kursiv).  | `font-style: italic;`           |
+
+
 
 ### Allgemeine Tastenkombinationen
 
@@ -89,3 +116,8 @@ Diese praktischen Kombinationen funktionieren nur in VS Code:
 
 Emmet sind Kurzformen, die VS Code zu Code umschreibt, hier einige kurze Beispiele für ***HTML***:
 - `!`               --> erzeugt in einen Boilerplate-Code (Grundstruktur)
+- `lorem50`         --> erzeugt einen Lorem-Text mit 50 Worten
+- `div.box`         --> erzeugt eine `<div class="box">`
+- `ul>li*3`         --> erzeugt eine `<ul>` mit 3 `<li>`Elementen
+- `a{weiterlesen}`  --> erzeugt ein `<a href="">weiterlesen</a>`
+- `section>img+p+a` --> erzeugt eine Sektion und darin ein `<img>`, `<p>`und ein `<a>`
