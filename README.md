@@ -62,6 +62,7 @@ Folgende Elemente haben wir bislang kennengelernt:
 | `<ul>`         | Ungeordnete Liste                         | `<ul><li>Element</li></ul>`          |
 | `<ol>`         | Geordnete Liste                           | `<ol><li>Erstes Element</li></ol>`   |
 | `<li>`         | Listenelement                             | `<li>Listeneintrag</li>`             |
+| `<div>`        | Containerelement                          | `<div>Inhalt</div>`                  |
 
 #### 2.2 Inline Elemente (nehmen nur die Breite ihres Inhalts)
 
@@ -88,7 +89,24 @@ Folgende Elemente haben wir bislang kennengelernt:
 | `font-family`     | Bestimmt die Schriftart.                       | `font-family: Arial, sans-serif;`|
 | `font-style`      | Legt den Stil der Schrift fest (z.B. kursiv).  | `font-style: italic;`           |
 
+### Größen
+| Eigenschaft | Beschreibung                            | Beispiel              |
+|-------------|-----------------------------------------|-----------------------|
+| `width`     | Setzt die Breite eines Elements.        | `width: 100px;`       |
+| `height`    | Bestimmt die Höhe eines Elements.       | `height: 200px;`      |
 
+
+### Abstände und Rahmen
+| Eigenschaft | Beschreibung                                   | Beispiel             |
+|-------------|------------------------------------------------|----------------------|
+| `margin`    | Definiert den Außenabstand um ein Element herum.| `margin: 10px;`     |
+| `padding`   | Setzt den Innenabstand innerhalb eines Elements.| `padding: 20px;`    |
+| `border`    | Fügt einen Rand um das Element hinzu.           | `border: 1px solid black;`|
+
+### Hintergrund
+| Eigenschaft        | Beschreibung                          | Beispiel                    |
+|--------------------|---------------------------------------|-----------------------------|
+| `background-color` | Legt die Hintergrundfarbe fest.       | `background-color: yellow;` |
 
 ### Allgemeine Tastenkombinationen
 
